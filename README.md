@@ -1,4 +1,4 @@
-# Simfull Electron
+## Simfull Electron
 
 ### 실행 방법
 
