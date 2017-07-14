@@ -1,10 +1,10 @@
 # Simfull Electron
 
-#실행 방법
+# 실행 방법
 
     npm start
 
-#패키지화 및 인스톨러 변환
+# 패키지화 및 인스톨러 변환
 
 아래 순서로 실행
 
@@ -12,7 +12,7 @@
     npm run asar
     npm run createInstaller
 
-#ffmpeg 설치 및 설정 방법
+# ffmpeg 설치 및 설정 방법
 
 1. 아래 링크에서 Download FFmpeg 클릭하여 다운로드
 
