@@ -1,5 +1,4 @@
-# electron_simfull
-electron_simfull
+# Simfull Electron
 
 #실행 방법
 
