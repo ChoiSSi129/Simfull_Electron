@@ -1,8 +1,8 @@
-let download = require("download");
-let fs = require("fs");
-let imageType = require('image-type');
-let methodQueue = require("./../methodQueue");
-let base64Img = require('base64-img');
+const download = require("download");
+const fs = require("fs");
+const imageType = require('image-type');
+const methodQueue = require("./../methodQueue");
+const base64Img = require('base64-img');
 
 class SFDownloadManager
 {

@@ -1,6 +1,3 @@
-let electron = require('electron');
-const {app} = electron;
-let ipc = electron.ipcMain;
 const { Browser, run, sleep } = require('automatonic');
 
 class SFUploadManager

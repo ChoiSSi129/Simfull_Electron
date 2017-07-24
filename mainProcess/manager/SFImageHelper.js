@@ -1,5 +1,4 @@
 const YT = require("youtube.com");
-let methodQueue = require("./../methodQueue");
 
 let YtHelper = class YtHelper{
     constructor()

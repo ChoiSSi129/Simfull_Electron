@@ -220,6 +220,10 @@ class UI extends Singleton{
         this.$endMinute.val("");
         this.$endSecond.val("");
     }
+
+    handleAlert(){
+        alert("test");
+    }
 }
 
 $(function(){
