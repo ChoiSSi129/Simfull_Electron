@@ -224,4 +224,9 @@ class UI extends Singleton{
 
 $(function(){
     UI.ins.startup();
+
+    ipcRenderer.on('asynchronous-reply', (arg) => {
+        console.log(arg) // "pong" 출력
+    })
+    ipcRenderer.send('asynchronous-message', 'ping')
 });

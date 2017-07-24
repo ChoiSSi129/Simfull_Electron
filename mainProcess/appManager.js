@@ -7,6 +7,7 @@ const ytHelper = require("./manager/SFImageHelper").ytHelper;
 let handleDownloadComplete = ( _title, _category, _results ) =>{
     uploadManager.uploadFTP( _title, _category , _results );
 };
+
 // 받기
 ipcMain.on('community-data', (e, arg) => {
     downloadManager.insertFile( arg.img, arg.title, arg.category, handleDownloadComplete );

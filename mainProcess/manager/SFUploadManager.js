@@ -15,7 +15,7 @@ class SFUploadManager
         this.FtpDeploy = require('ftp-deploy');
     }
 
-    uploadFTP( title, category, files, sender )
+    uploadFTP( title, category, files )
     {
         let results = files.map( (val)=>{
             return `<p><img src="/images/${category}/${val}" /></p>`;
