@@ -6,11 +6,9 @@ if (setupEvents.handleSquirrelEvent()) {
 }
 const path = require("path");
 const electron = require("electron");
-const ipc = electron.ipcMain;
+const { app, BrowserWindow } = electron;
 const url = require("url");
 const glob = require("glob");
-const app = electron.app;
-const BrowserWindow = electron.BrowserWindow;
 const electronLocalshortcut = require('electron-localshortcut');
 
 require('electron-debug')({showDevTools: true});

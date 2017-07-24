@@ -1,5 +1,5 @@
 const electron = require('electron');
-const { app, BrowserWindow, ipcMain } = electron;
+const { ipcMain } = electron;
 const downloadManager = require("./manager/SFDownloadManager");
 const uploadManager = require("./manager/SFUploadManager");
 const ytHelper = require("./manager/SFImageHelper").ytHelper;
