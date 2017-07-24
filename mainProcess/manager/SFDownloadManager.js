@@ -22,12 +22,14 @@ class SFDownloadManager
         this.queue.next();
     }
 
+
     insertImage(url, cate, _this)
     {
         download( url ).then(data => {
             const _type = "."+imageType( data ).ext;
             const _name = new Date().getTime()+_type;
             const _fileName = `download/${cate}/${_name}`;
+
             fs.writeFile(_fileName, data, ()=>{
                 try{
                     _this.results.push( _name );
@@ -37,7 +39,6 @@ class SFDownloadManager
                     console.log( "error : ", e );
                 }
             });
-
         });
     }
 }

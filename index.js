@@ -13,7 +13,6 @@ const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
 const electronLocalshortcut = require('electron-localshortcut');
 
-
 require('electron-debug')({showDevTools: true});
 let mainWindow;
 loadMainProcess();
@@ -29,8 +28,6 @@ function createWindow () {
         slashes: true,
         contextIsolation : true
     }));
-
-
 
     // Open the DevTools.
     // mainWindow.webContents.openDevTools();

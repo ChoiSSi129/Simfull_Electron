@@ -16,4 +16,3 @@ ipc.on('community-data', (e, arg) => {
 ipc.on("yt-data", (e, arg) =>{
     ytHelper.convertVideoToGif( arg, handleDownloadComplete );
 });
-

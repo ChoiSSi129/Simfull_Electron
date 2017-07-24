@@ -93,6 +93,7 @@ class SFScrapper {
         let dataObj = {};
         let imgArr = [];
         const $scrapingWrap = UI.ins.$body.find(".scrapingWrap");
+        // const $log = UI.ins.$body.find(".log");
         switch( true )
         {
             case  /nsbu/g.test(_url) :
@@ -120,7 +121,10 @@ class SFScrapper {
         if(/youtube/g.test(_url)){
             this.sendToIpcRender( "yt-data", dataObj )
         } else{
-            $scrapingWrap.find(dataObj.img).each(function(){ imgArr.push($(this).attr("src")); });
+            $scrapingWrap.find(dataObj.img).each(function(){ 
+                imgArr.push($(this).attr("src")); 
+                // $log.append("<p>"+ $(this).attr("src") +" 업로드중</p>");
+            });
             let obj = { title : ( /naver/g.test(_url) ) ? dataObj.tit.trim() : $scrapingWrap.find(dataObj.tit).html().trim(), img : imgArr, category : _category };
             this.sendToIpcRender( "community-data", obj )
         }
@@ -130,7 +134,6 @@ class SFScrapper {
     {
         ipcRenderer.send( _type , _value );
     }
-
 }
 
 class UI extends Singleton{
@@ -222,4 +225,3 @@ class UI extends Singleton{
 $(function(){
     UI.ins.startup();
 });
-

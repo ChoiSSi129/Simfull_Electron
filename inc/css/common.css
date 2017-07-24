@@ -45,7 +45,8 @@ a:hover{text-decoration:none;}
 
 .logWrap {margin:20px 10px 0;}
 .logWrap .tit {margin-bottom:5px;}
-.logWrap .log {overflow:auto;height:150px;padding:5px;border:1px solid #999;}
+.logWrap .log {overflow:auto;height:150px;padding:5px;border:1px solid #999;background:#fff;}
+.logWrap .log p {margin-top:10px;color:#333;}
 
 .gifUploadList {margin:10px;}
 .gifUploadList li {margin-top:10px;font-size:14px;color:#000;}

@@ -1,5 +1,10 @@
 ## Simfull Electron
 
+### Electron 설치
+
+    npm install electron -g
+    npm install electron --save-dev
+
 ### 실행 방법
 
     npm start
